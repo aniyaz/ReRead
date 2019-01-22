@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/db" android:title="dashbored" android:icon="@drawable/ic_youtube"/>
+    <item android:id="@+id/event" android:title="Event" android:icon="@drawable/ic_cloud"/>
+    <item android:id="@+id/search" android:title="Search" android:icon="@drawable/ic_search"/>
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_home2"
+        android:title="Settings" />
+    <item android:id="@+id/activities" android:title="Activities" android:icon="@drawable/ic_location"/>
+    <item android:id="@+id/lougout" android:title="Lougout" android:icon="@drawable/ic_compass"/>
+
+</menu>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/book_layout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#dcdaae">
+
+    <ImageView
+        android:id="@+id/bookicon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/herbelt" />
+
+    <TextView
+        android:id="@+id/bookname"
+        android:text="@string/chowdhury_book_shop"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bookicon"/>
+    <TextView
+        android:id="@+id/bookprice"
+        android:text="@string/Rs"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_alignParentRight="true"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/author"
+        android:text="Complete Reference: C++"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bookicon"
+        android:layout_below="@id/bookname"/>
+    <TextView
+        android:id="@+id/bookedition"
+        android:text="Herbert Schildt"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bookicon"
+        android:layout_below="@id/author"/>
+    <TextView
+        android:id="@+id/publisher"
+        android:text="4th Ed"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_below="@id/author"
+        android:layout_toRightOf="@id/bookedition"/>
+    <!--<RatingBar
+        android:id="@+id/rating_bar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="2.5"
+        android:stepSize="0.5"
+        android:layout_toRightOf="@id/bookicon"
+        android:layout_below="@id/bookedition"/> -->
+    <TextView
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bookicon"
+        android:layout_below="@id/bookedition"
+        android:text="@string/mrp"
+        android:textSize="25sp"/>
+
+    <ImageButton
+        android:id="@+id/navigate"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_navigation_black_24dp-2"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_navigation_black_24dp-2" />
+</RelativeLayout>

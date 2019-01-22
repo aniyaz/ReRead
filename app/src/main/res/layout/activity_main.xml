@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/color"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <EditText
+        android:id="@+id/search_key"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="#009999"
+        android:hint="Search Hint"
+        android:padding="8dp"
+        android:shadowColor="#009910"/>
+    <ImageButton
+        android:id="@+id/search_key_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/search_icon"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:background="@color/colorPrimary"
+        android:layout_toRightOf="@id/search_key"/>
+
+</RelativeLayout>
+

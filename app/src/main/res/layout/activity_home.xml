@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.reread.android.HomeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/popular_book"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/popular_image"
+        android:gravity="center"
+        android:text="Popular Books"
+        android:textColor="#1e2b33"
+        android:textStyle="bold"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/recom_book"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/recom_image"
+        android:gravity="center"
+        android:text="Recommended Books"
+        android:textColor="#1e2b33"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+</LinearLayout>
